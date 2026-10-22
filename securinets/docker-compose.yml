@@ -8,8 +8,6 @@ services:
     environment:
       MONGO_URL: mongodb://mongo:27017/securinets
       JWT_SECRET: change-me
-      ADMIN_EMAIL: admin@securinets.tn
-      ADMIN_PASSWORD: Admin123!
     depends_on: [mongo]
     ports: ["5000:5000"]
   web:
